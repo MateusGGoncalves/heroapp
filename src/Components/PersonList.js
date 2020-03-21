@@ -4,21 +4,21 @@ import {api} from '../Services/api';
 
 export default class PersonList extends React.Component {
   state = {
-    persons: []
+    hero: []
   }
 
   componentDidMount() {
-    api.get('/id')
+    api.get('/69')
       .then(res => {
-        const persons = res.data;
-        this.setState({ persons });
+        const hero = res.data;
+        this.setState({ hero });
       })
   }
 
   render() {
     return (
       <ul>
-        { this.state.persons.map(person => <li key={person.id}>{person.name}</li>)}
+        {this.state.hero.map(characters => <li>{characters.name}</li>)}
       </ul>
     )
   }

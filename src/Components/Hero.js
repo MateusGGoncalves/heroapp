@@ -4,7 +4,7 @@ export default class Hero extends Component {
   render() {
     return <div>
         <h1>
-            Olá Coronga!
+            Teste!
         </h1>
     </div>
   }
