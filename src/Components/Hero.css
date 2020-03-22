@@ -1,0 +1,28 @@
+.HeroDiv{
+    display: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 25%;
+    font-family: Anton;
+    font-size: 30px;
+}
+
+.Status{
+    display: center;
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: black;
+    color: white;
+    font-family: Anton;
+    font-size: 20px;
+
+}
