@@ -12,7 +12,7 @@ export default class PersonList extends React.Component {
   }
 
   componentDidMount() {
-    api.get('/686')
+    api.get('/555')
       .then(res => {
         const heroes = res.data;
         const imagem = res.data.image;
@@ -35,12 +35,9 @@ export default class PersonList extends React.Component {
 
     return  (
       <div className="HeroDiv">
-        {arr.map(hero => <p>{hero.name} ({hero.id})</p>)}
-        {arr1.map(hero2 => <img width="275vh" src={hero2.url} alt="batman"/>)}
-        <div className="Status">
-        {arr2.map(hero3 => <div><p>Inteligência:{hero3.intelligence} Força:{hero3.strength}</p>
-         <p>Velocidade:{hero3.speed} Defesa:{hero3.durability}</p> <p>Poder:{hero3.power} Combate:{hero3.combat}</p></div>)}
-        </div>
+      {arr.map(hero => <p>{hero.name} ({hero.id})</p>)}
+      {arr1.map(hero2 => <img width="80%" border="5px" height="auto" src={hero2.url} alt="imagem"/>)}
+      {arr2.map(hero3 => <div className="Status">Inteligência:{hero3.intelligence}<p>Força:{hero3.strength}</p><p>Velocidade:{hero3.speed}</p><p>Defesa:{hero3.durability}</p><p>Poder:{hero3.power}</p><p>Combate:{hero3.combat}</p></div>)}
       </div>
     )
   }
